@@ -1,22 +1,22 @@
 class Tuneup < Formula
   desc "Command-line music utility showcasing taglib-wasm capabilities"
   homepage "https://github.com/CharlesWiltgen/tuneup"
-  version "0.9.1"
+  version "0.9.2-rc.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/CharlesWiltgen/tuneup-releases/releases/download/v0.9.1/tuneup-macos-arm64.tar.gz"
-      sha256 "3f41bbbc4151852932b0a0e9d81bae69594c7f7a92e67af3da28d4d563f00ab1"
+      url "https://github.com/CharlesWiltgen/tuneup-releases/releases/download/v0.9.2-rc.1/tuneup-macos-arm64.tar.gz"
+      sha256 "468baeb60f545577573b892dc1b25c6aef17c3ac813ae8c4623e7021a4389d93"
     else
-      url "https://github.com/CharlesWiltgen/tuneup-releases/releases/download/v0.9.1/tuneup-macos-x86_64.tar.gz"
-      sha256 "7eeaf8d235fb3eac2f7b0da82133bc997b1c897fc04f5db2978c26f4bb3b2e54"
+      url "https://github.com/CharlesWiltgen/tuneup-releases/releases/download/v0.9.2-rc.1/tuneup-macos-x86_64.tar.gz"
+      sha256 "30160127788486c5205e3aa0288b9c3775d76c734076e48c79e42ca2ac59921b"
     end
   end
 
   on_linux do
-    url "https://github.com/CharlesWiltgen/tuneup-releases/releases/download/v0.9.1/tuneup-linux-x86_64.tar.gz"
-    sha256 "3b26aba484819d4a877cc9f319c93909a6b919afa0e6cbc61b7063c939b3cfff"
+    url "https://github.com/CharlesWiltgen/tuneup-releases/releases/download/v0.9.2-rc.1/tuneup-linux-x86_64.tar.gz"
+    sha256 "a8fde5c3f94c033413b23b942353823fc397b019700ca48d090584c7f516cd3a"
   end
 
   def install
